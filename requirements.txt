@@ -9,3 +9,4 @@ pypdf
 gunicorn
 Jinja2 
 flask_cors
+faiss-cpu
