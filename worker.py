@@ -5,7 +5,7 @@ from langchain_community.embeddings import OpenAIEmbeddings
 from langchain_community.document_loaders import PyPDFLoader
 from dotenv import load_dotenv
 from langchain.text_splitter import CharacterTextSplitter
-from langchain_community.vectorstores import Chroma
+from langchain_community.vectorstores import FAISS
 
 load_dotenv(os.path.join(os.path.dirname(__file__), '.env'))
 
@@ -36,7 +36,7 @@ def process_document(document_path):
     texts = text_splitter.split_documents(documents)
 
     # Create a vector store from the document chunks
-    db = Chroma.from_documents(texts, llm_embeddings)
+    db = FAISS.from_documents(texts, llm_embeddings)
 
     # Create a retriever interface from the vector store
     retriever = db.as_retriever(search_type="similarity", search_kwargs={"k": 2})

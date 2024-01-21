@@ -4,11 +4,14 @@ from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS
 from dotenv import load_dotenv
 import worker
+import sqlite3
+
 
 app = Flask(__name__)
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
 app.logger.setLevel(logging.ERROR)
 
+print("version: ",sqlite3.version_info)
 load_dotenv(os.path.join(os.path.dirname(__file__), '.env'))
 
 @app.route('/', methods=['GET'])
@@ -40,9 +43,9 @@ def process_document_route():
     file = request.files['file']
     file_path = file.filename
     file.save(file_path)
-
+    print("a")
     worker.process_document(file_path)  # Process the document using the worker module
-
+    print("b")
     return jsonify({
         "botResponse": "Thank you for providing your PDF document. I have analyzed it, so now you can ask me any "
                        "questions regarding it!"
