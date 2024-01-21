@@ -6,3 +6,6 @@ pdf2image
 tiktoken
 chromadb
 pypdf
+gunicorn
+Jinja2 
+flask_cors

@@ -1,3 +1,5 @@
+
+
 let lightMode = true;
 let recorder = null;
 let recording = false;
@@ -202,3 +204,5 @@ $(document).ready(function () {
     lightMode = !lightMode;
   });
 });
+
+// Initialize Appwrite
