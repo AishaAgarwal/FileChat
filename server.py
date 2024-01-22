@@ -8,7 +8,7 @@ import sqlite3
 
 
 app = Flask(__name__)
-cors = CORS(app, resources={r"/*": {"origins": "*"}})
+CORS(app, origins=["*"])
 app.logger.setLevel(logging.ERROR)
 
 print("version: ",sqlite3.version_info)
@@ -16,6 +16,10 @@ load_dotenv(os.path.join(os.path.dirname(__file__), '.env'))
 
 @app.route('/', methods=['GET'])
 def index():
+    return render_template('google.html')
+
+@app.route('/home', methods=['GET'])
+def start():
     return render_template('index.html')
 
 # Route for processing messages
@@ -50,6 +54,7 @@ def process_document_route():
         "botResponse": "Thank you for providing your PDF document. I have analyzed it, so now you can ask me any "
                        "questions regarding it!"
     }), 200
+
 
 # Run the Flask app
 if __name__ == "__main__":
