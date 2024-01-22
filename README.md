@@ -9,7 +9,6 @@
 -->
 
 
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -19,8 +18,11 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
+<div align="center">
 
+  <a href="">[![MIT License][license-shield]][license-url]</a>
 
+</div>
 
 <!-- PROJECT LOGO -->
 <br />
@@ -42,10 +44,11 @@ A LLM based QnA platform answering questions on provided Documents
 </div>
 
 
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
+
+  
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
@@ -53,17 +56,11 @@ A LLM based QnA platform answering questions on provided Documents
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-       
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-   
+    <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
   </ol>
 </details>
-
 
 
 <!-- ABOUT THE PROJECT -->
@@ -83,8 +80,11 @@ It is completely based on LLMs and Langchain for its AI implementation to make y
 
 ### Built With
 
-These are major frameworks/libraries used to bootstrap the project. 
+The webservice was built with mainly the following Frameworks/Libraries at the core of it keeping it alive
 
+* [![Flask][Flask]][Flask-url]
+* [![Langchain][Langchain]][Langchain-url]
+* [![OpenAI][OpenAI]][OpenAI-url]
 * [![Javascript][Javascript]][Javascript-url]
 * [![HTML][HTML]][HTML-url]
 * [![CSS][CSS]][CSS-url]
@@ -94,17 +94,13 @@ These are major frameworks/libraries used to bootstrap the project.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Below are the instructions on setting up your project locally.
-To get a local copy up and running follow these simple steps.
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
 
-
-### Installation
-
-
+_Lets first get on with getting our OpenAI API key for the OpenAI LLM model being used at the core end of the QAchain._
 
 1. Get a free API Key at [https://platform.openai.com/api-keys](https://platform.openai.com/api-keys)
 2. Clone the repo
@@ -126,37 +122,49 @@ To get a local copy up and running follow these simple steps.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- CONTRIBUTING -->
+## Contributing
 
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
 
+1. Fork the Project
+2. Follow the <a href="#getting-started">Getting Started</a> guide
+3. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+4. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+5. Push to the Branch (`git push origin feature/AmazingFeature`)
+6. Open a Pull Request
 
-
-
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- LICENSE -->
+## License
 
+Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-
-
-
-
-
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-url]: https://github.com/Aarush-Acharya/Oven/blob/AishaAgarwal-patch-1/LICENSE.txt
 [product-screenshot]: screenshot.png
 [Javascript]: https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E
 [Javascript-url]: [https://nextjs.org/](https://devdocs.io/javascript/)
+[Flask]: https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white
+[Flask-url]: https://devdocs.io/html/](https://flask.palletsprojects.com/en/3.0.x/
+[OpenAI]: https://img.shields.io/badge/OpenAI-412991.svg?style=for-the-badge&logo=OpenAI&logoColor=white
+[OpenAI-url]: https://openai.com/
+[Langchain]: https://img.shields.io/badge/Langchain-04AF70
+[Langchain-url]: https://openai.com/](https://www.langchain.com
 [HTML]: https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white
 [HTML-url]: https://devdocs.io/html/
 [CSS]: https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white
 [CSS-url]: https://devdocs.io/css/
 [Python]: https://camo.githubusercontent.com/7f18b6c771d2b7542625d2af294cb5ff95007dd959d261cdb736d43561856e52/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f707974686f6e2d3336373041303f7374796c653d666c6174266c6f676f3d707974686f6e266c6f676f436f6c6f723d666664643534
 [Python-url]: https://docs.python.org/3/
-
