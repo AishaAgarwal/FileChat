@@ -40,13 +40,15 @@
         }
 
         ss();
-        
+       
         
         function signin() {
           console.log("clicked")
           account.createOAuth2Session("google",
-          "http://localhost:5000/home", // Success URL
-              "http://localhost:5000" )// Failure URL);
+          `${window.location.href}/home`,
+          `${window.location.href}` // Success URL
+             )
+              // Failure URL);
           // Additional code for handling the button click
         }
 
