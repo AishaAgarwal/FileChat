@@ -56,15 +56,11 @@ A LLM based QnA platform answering questions on provided Documents
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
+       
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+   
   </ol>
 </details>
 
@@ -87,7 +83,7 @@ It is completely based on LLMs and Langchain for its AI implementation to make y
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+These are major frameworks/libraries used to bootstrap the project. 
 
 * [![Javascript][Javascript]][Javascript-url]
 * [![HTML][HTML]][HTML-url]
@@ -102,13 +98,13 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Below are the instructions on setting up your project locally.
+To get a local copy up and running follow these simple steps.
 
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+
 
 1. Get a free API Key at [https://platform.openai.com/api-keys](https://platform.openai.com/api-keys)
 2. Clone the repo
@@ -140,11 +136,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 
 <!-- LICENSE -->
-## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
